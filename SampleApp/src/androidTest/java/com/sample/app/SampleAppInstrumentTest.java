@@ -4,8 +4,9 @@ import android.test.ActivityInstrumentationTestCase2;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.jayway.android.robotium.solo.Solo;
+import com.robotium.solo.Solo;
 import com.squareup.spoon.Spoon;
+import android.widget.Button;
 
 public class SampleAppInstrumentTest extends ActivityInstrumentationTestCase2<FirstActivity> {
     private Solo solo;
@@ -25,10 +26,15 @@ public class SampleAppInstrumentTest extends ActivityInstrumentationTestCase2<Fi
         Spoon.screenshot(getActivity(), "initial_state");
 
         // Set a value into the text field
-        solo.enterText((EditText) solo.getView(R.id.etResult), fieldValue);
+        EditText editText = (EditText) solo.getView(R.id.etResult);
+        solo.waitForView(editText);
+        solo.enterText(editText, fieldValue);
 
         Spoon.screenshot(getActivity(), "before_button_clicked");
+
         // find button and click it
+        Button button = (Button) solo.getView(R.id.btnLaunch);
+        solo.waitForView(button);
         solo.clickOnButton("Launch");
         // or solo.clickOnView(solo.getView(R.id.btnLaunch));
 
