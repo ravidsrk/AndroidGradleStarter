@@ -30,7 +30,7 @@ public class SampleAppInstrumentTest extends ActivityInstrumentationTestCase2<Fi
         solo.waitForView(editText);
         solo.enterText(editText, fieldValue);
 
-        Spoon.screenshot(getActivity(), "before_button_clicked");
+        // Spoon.screenshot(getActivity(), "before_button_clicked");
 
         // find button and click it
         Button button = (Button) solo.getView(R.id.btnLaunch);
@@ -42,7 +42,7 @@ public class SampleAppInstrumentTest extends ActivityInstrumentationTestCase2<Fi
         solo.waitForActivity(SecondActivity.class, 2000);
         solo.assertCurrentActivity("Should be second activity", SecondActivity.class);
 
-        Spoon.screenshot(solo.getCurrentActivity(), "second_state");
+        // Spoon.screenshot(solo.getCurrentActivity(), "second_state");
 
         // Search for the textView
         TextView textView = (TextView) solo.getView(R.id.tvResult);
