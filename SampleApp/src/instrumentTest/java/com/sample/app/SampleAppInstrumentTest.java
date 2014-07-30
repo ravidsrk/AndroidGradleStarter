@@ -4,9 +4,8 @@ import android.test.ActivityInstrumentationTestCase2;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.robotium.solo.Solo;
+import com.jayway.android.robotium.solo.Solo;
 import com.squareup.spoon.Spoon;
-import android.widget.Button;
 
 public class SampleAppInstrumentTest extends ActivityInstrumentationTestCase2<FirstActivity> {
     private Solo solo;
@@ -26,22 +25,18 @@ public class SampleAppInstrumentTest extends ActivityInstrumentationTestCase2<Fi
         Spoon.screenshot(getActivity(), "initial_state");
 
         // Set a value into the text field
-        EditText editText = (EditText) solo.getView(R.id.etResult);
-        solo.waitForView(editText);
-        solo.enterText(editText, fieldValue);
+        solo.enterText((EditText) solo.getView(R.id.etResult), fieldValue);
 
-        // Spoon.screenshot(getActivity(), "before_button_clicked");
-
+        Spoon.screenshot(getActivity(), "before_button_clicked");
         // find button and click it
-        Button button = (Button) solo.getView(R.id.btnLaunch);
-        solo.waitForView(button);
-        solo.clickOnView(button);
+        solo.clickOnButton("Launch");
+        // or solo.clickOnView(solo.getView(R.id.btnLaunch));
 
         // Wait 2 seconds for the start of the activity
         solo.waitForActivity(SecondActivity.class, 2000);
         solo.assertCurrentActivity("Should be second activity", SecondActivity.class);
 
-        // Spoon.screenshot(solo.getCurrentActivity(), "second_state");
+        Spoon.screenshot(solo.getCurrentActivity(), "second_state");
 
         // Search for the textView
         TextView textView = (TextView) solo.getView(R.id.tvResult);
