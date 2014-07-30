@@ -7,7 +7,7 @@ Android Gradle Studio
 A sample android starter project to demonstrate the integration of the following tools:
 
 - Automation:             Gradle
-- Testing:                Android Testing Framework, Robotium, Roboelectric (JUnit, Android)
+- Testing:                Android Testing Framework, Robotium, Roboelectric (JUnit, Instrumentation)
 - Continuous Integration: TravisCI
 
 Sample Tasks
@@ -15,8 +15,8 @@ Sample Tasks
 
 - adding testing-only project dependencies
 - using square spoon to run integraton tests
-- writing android tests with robotium
+- writing instrumentation tests with robotium
 - writing junit tests with robolectric
-- android tests can be run with only Robotium use "gradle connectedAndroidTest"
-- Android tests can be run with Robotium and Spoon "gradle spoon"
+- Instrumentation tests can be run with only Robotium use "gradle connectedInstrumentTest"
+- Instrumentation tests can be run with Robotium and Spoon "gradle spoon"
 - Robolectric junit tests can be run with "gradle clean test"
