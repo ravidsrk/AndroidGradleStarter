@@ -80,14 +80,11 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" scope="TEST" name="mockito-all-1.9.5" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="fest-util-1.2.5" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="fest-android-1.0.8" level="project" />
-    <orderEntry type="library" exported="" name="appcompat-v7-19.1.0" level="project" />
-    <orderEntry type="library" exported="" name="support-v4-19.1.0" level="project" />
+    <orderEntry type="library" exported="" name="appcompat-v7-20.0.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="spoon-client-1.1.1" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-20.0.0" level="project" />
+    <orderEntry type="library" exported="" name="support-v4-20.0.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="robotium-solo-5.2.1" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="fest-assert-core-2.0M10" level="project" />
   </component>
 </module>
 
