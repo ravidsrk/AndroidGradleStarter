@@ -1,9 +1,7 @@
 Android Gradle Studio
-====================
+=====================
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ravidsrk/AndroidGradleStarter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-[![Build Status](https://travis-ci.org/ravidsrk/AndroidGradleStarter.png?branch=master)](https://travis-ci.org/ravidsrk/AndroidGradleStarter)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ravidsrk/AndroidGradleStarter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  [![Build Status](https://travis-ci.org/ravidsrk/AndroidGradleStarter.svg?branch=master)](https://travis-ci.org/ravidsrk/AndroidGradleStarter)
 
 
 A sample android starter project to demonstrate the integration of the following tools:
