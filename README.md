@@ -13,11 +13,11 @@ A sample android starter project to demonstrate the integration of the following
 Sample Tasks
 ------------
 
-- adding testing-only project dependencies
-- using square spoon to run integraton tests
-- writing android tests with robotium
-- writing junit tests with robolectric
-- android tests can be run with only Robotium use "gradle connectedAndroidTest"
+- Adding testing-only project dependencies
+- Using square spoon to run integraton tests
+- Writing android tests with robotium
+- Writing junit tests with robolectric
+- Android tests can be run with only Robotium use "gradle connectedAndroidTest"
 - Android tests can be run with Robotium and Spoon "gradle spoon"
 - Robolectric junit tests can be run with "gradle clean test"
 
